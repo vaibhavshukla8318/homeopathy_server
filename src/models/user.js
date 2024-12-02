@@ -1,7 +1,9 @@
+require("dotenv").config();
 const {Schema, model} = require('mongoose');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const validator = require('validator');
+
 
 const userSchema = new Schema({
     username: {
@@ -92,7 +94,7 @@ userSchema.methods.generateToken = async function(){
      email: this.email,
      isAdmin: this.isAdmin
    },
-    "hitheremynameisvaibhavshukla",
+   process.env.JWT_SECRET_KEY,
     { 
      expiresIn: '30d' 
    }

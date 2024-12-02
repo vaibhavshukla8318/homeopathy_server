@@ -1,6 +1,6 @@
 const User = require('../models/user');
-const sendEmail = require('../utils/email');  // Assume you have a function to send email
-const generateOtp = require('../utils/generateOtp');  // OTP generation utility
+const sendEmail = require('../utils/email'); 
+const generateOtp = require('../utils/generateOtp');  
 
 
 // Register user
@@ -143,9 +143,6 @@ resetPassword = async (req, res) => {
 
   res.status(200).json({ message: "Password reset successful. You can now log in with your new password." });
 };
-
-
-
 
 
 // to send user data = User Controller

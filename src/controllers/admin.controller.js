@@ -1,7 +1,7 @@
 // controller.admin.js
 
 const User = require('../models/user');
-const Contact = require('../models/contact.model')
+// const Contact = require('../models/contact.model')
 
 
 // For Users
