@@ -9,7 +9,8 @@ const blogRouter = require('./src/routers/Blog.router');
 const app = express();
 
 const corsOptions = {
-  origin: 'https://aarogyasanjeevani.netlify.app',
+  // origin: 'https://aarogyasanjeevani.netlify.app',
+  origin: 'http://localhost:5173',
   credentials: true,
   allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'Authorization'],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD']
